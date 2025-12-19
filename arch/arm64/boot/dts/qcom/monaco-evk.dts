@@ -517,6 +517,9 @@
 };
 
 &mdss_dp0 {
+	pinctrl-0 = <&dp_hot_plug_det>;
+	pinctrl-names = "default";
+
 	status = "okay";
 };
 
@@ -526,6 +529,9 @@
 };
 
 &mdss_dp0_phy {
+	vdda-phy-supply = <&vreg_l5a>;
+	vdda-pll-supply = <&vreg_l4a>;
+
 	status = "okay";
 };
 
